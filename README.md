@@ -20,7 +20,7 @@ On a desktop browser the app shows inside a phone frame. On a phone it fills the
 
 - **Home:** balance with show/hide, quick actions, "Send again", spending breakdown, recent activity.
 - **Scan & Pay:** tap the viewfinder to simulate scanning a merchant QR.
-- **Send / Request:** search contacts, or type a Pay ID (`name@payyuh`) or a +1 868 number. Enter an amount on the keypad (your computer keyboard works too), then any 6-digit PIN.
+- **Send / Request:** search contacts, or type a Pay ID (`name@ttpay`) or a +1 868 number. Enter an amount on the keypad (your computer keyboard works too), then any 6-digit PIN.
 - **Receipt:** reference number, and your balance and activity update.
 - **Bills & recharge:** pay due T&TEC and WASA bills, or pick a category.
 - **Activity:** filter by sent, received and bills.

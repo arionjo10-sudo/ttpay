@@ -40,16 +40,16 @@
   const TINTS = [['#D6EEEA', '#0A5551'], ['#FBDFDC', '#8E1822'], ['#FBEBC0', '#6E4A00'], ['#DDE4F7', '#27367A'], ['#E8DDF3', '#4B2A73']];
   const tint = (t) => TINTS[t % TINTS.length];
 
-  const ME = { name: 'Amara Joseph', first: 'Amara', pid: 'amara.joseph@payyuh', phone: '+1 868 555 0142' };
+  const ME = { name: 'Amara Joseph', first: 'Amara', pid: 'amara.joseph@ttpay', phone: '+1 868 555 0142' };
   const BANK = 'First Savannah Bank ••4821';
 
   const CONTACTS = [
-    { name: 'Ravi Maharaj', first: 'Ravi', init: 'RM', pid: 'ravi.maharaj@payyuh', phone: '+1 868 342 7716', t: 0 },
-    { name: 'Shanice Baptiste', first: 'Shanice', init: 'SB', pid: 'shanice.b@payyuh', phone: '+1 868 718 2290', t: 1 },
-    { name: 'Marcia Alexander', first: 'Mum', init: 'MA', pid: 'marcia.alexander@payyuh', phone: '+1 868 623 4408', t: 2 },
-    { name: 'Kerwin Joseph', first: 'Kerwin', init: 'KJ', pid: 'kerwin.j@payyuh', phone: '+1 868 290 5531', t: 3 },
-    { name: 'Nadia Ali', first: 'Nadia', init: 'NA', pid: 'nadia.ali@payyuh', phone: '+1 868 475 1062', t: 4 },
-    { name: "Chef Dee's Roti Shop", first: 'Chef Dee', init: 'CD', pid: 'chefdee@payyuh', phone: '+1 868 657 3318', t: 1, kind: 'merchant' }
+    { name: 'Ravi Maharaj', first: 'Ravi', init: 'RM', pid: 'ravi.maharaj@ttpay', phone: '+1 868 342 7716', t: 0 },
+    { name: 'Shanice Baptiste', first: 'Shanice', init: 'SB', pid: 'shanice.b@ttpay', phone: '+1 868 718 2290', t: 1 },
+    { name: 'Marcia Alexander', first: 'Mum', init: 'MA', pid: 'marcia.alexander@ttpay', phone: '+1 868 623 4408', t: 2 },
+    { name: 'Kerwin Joseph', first: 'Kerwin', init: 'KJ', pid: 'kerwin.j@ttpay', phone: '+1 868 290 5531', t: 3 },
+    { name: 'Nadia Ali', first: 'Nadia', init: 'NA', pid: 'nadia.ali@ttpay', phone: '+1 868 475 1062', t: 4 },
+    { name: "Chef Dee's Roti Shop", first: 'Chef Dee', init: 'CD', pid: 'chefdee@ttpay', phone: '+1 868 657 3318', t: 1, kind: 'merchant' }
   ];
 
   const SEED_TXNS = [
@@ -86,12 +86,12 @@
     { label: 'Transport', amt: 419.5, color: '#E8A317' }
   ];
 
-  const MERCHANT_SCAN = { name: "Aunty Ramdhanie's Doubles", pid: 'ramdhanie.doubles@payyuh', init: 'AR', t: 2, kind: 'merchant' };
+  const MERCHANT_SCAN = { name: "Aunty Ramdhanie's Doubles", pid: 'ramdhanie.doubles@ttpay', init: 'AR', t: 2, kind: 'merchant' };
 
   /* ------------------------------------------------------------------ */
   /* State                                                               */
   /* ------------------------------------------------------------------ */
-  const STORE_KEY = 'payyuh-demo-v1';
+  const STORE_KEY = 'ttpay-demo-v1';
   const clone = (x) => JSON.parse(JSON.stringify(x));
 
   function defaults() {
@@ -299,7 +299,7 @@
         <span class="main"><span class="name">${esc(c.name)}</span><span class="sub">${esc(c.pid)} · ${esc(c.phone)}</span></span>
       </button>`).join('');
     const none = !matches.length && !hasManual
-      ? '<div class="empty">No contact found. Type a full Pay ID like name@payyuh or a mobile number starting with +1 868.</div>' : '';
+      ? '<div class="empty">No contact found. Type a full Pay ID like name@ttpay or a mobile number starting with +1 868.</div>' : '';
     return `${manual}
       <section class="section"><h2 class="eyebrow">Contacts</h2>${list}${none}</section>`;
   }
